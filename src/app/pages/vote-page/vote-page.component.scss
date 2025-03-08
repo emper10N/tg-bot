@@ -1,0 +1,166 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 160px;
+  height: 160px;
+  display: block;
+  cursor: pointer;
+}
+
+.text-overlay {
+  width: auto;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  white-space: pre-line;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.myButton {
+  border: none;
+  box-shadow: inset 9px 9px 9px 5px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 21px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 8px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton.voted {
+  box-shadow: inset 9px 9px 9px 5px #83ff6a;
+  background: linear-gradient(to bottom, #99f586 5%, #38f513 100%);
+  background-color: #63f746;
+}
+
+h3 {
+  height: 94px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #cc0000;
+}
+
+.thank-you-message {
+  text-align: center;
+  padding: 50px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message p {
+  font-size: 1.5em;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.message {
+  text-align: center;
+  padding: 5px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+  font-size: 1em;
+  color: #28a745;
+  font-weight: bold;
+}
